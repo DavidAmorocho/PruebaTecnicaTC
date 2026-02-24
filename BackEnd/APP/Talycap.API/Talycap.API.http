@@ -1,0 +1,6 @@
+@Talycap.API_HostAddress = http://localhost:5068
+
+GET {{Talycap.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
