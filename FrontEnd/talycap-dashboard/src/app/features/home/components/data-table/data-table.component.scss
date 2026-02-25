@@ -1,0 +1,57 @@
+.table-container {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+
+  .table-header {
+    padding: 16px;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #e0e0e0;
+
+    .filter-field {
+      width: 100%;
+      max-width: 400px;
+    }
+  }
+
+  .responsive-table {
+    overflow-x: auto;
+    width: 100%;
+
+    table {
+      width: 100%;
+
+      th.mat-header-cell {
+        font-weight: 600;
+        color: rgba(0, 0, 0, 0.87);
+        font-size: 14px;
+      }
+
+      td.mat-cell, th.mat-header-cell {
+        padding: 12px 16px;
+      }
+
+      .table-image {
+        width: 50px;
+        height: 75px;
+        object-fit: cover;
+        border-radius: 4px;
+      }
+
+      .no-image {
+        width: 50px;
+        height: 75px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #eee;
+        color: #999;
+        font-size: 10px;
+        text-align: center;
+        border-radius: 4px;
+      }
+    }
+  }
+}
